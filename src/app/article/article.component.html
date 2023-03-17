@@ -1,0 +1,22 @@
+<div class="card arti_infos" style="width: 18rem;">
+  <img [src]="urlImg" class="card-img-top" [alt]="altImg">
+  <div class="card-body">
+    <h5 class="card-title" [ngStyle]="{color :getColor()}" >
+      {{titreArticle}}
+      <span *ngIf="disponible === false"> - indisponible</span>
+    </h5>
+    <h6 class="card-title"> {{prixArticle}}f cfa </h6>
+    <p class="card-text"> {{description}} </p>
+    <button  (click)="onLike()" [ngClass]="{'show': jaime === true, 'hidden': jaime === false}" >
+      j'aime
+     </button>
+    <button class="nolike" (click)="onLike()" [ngClass]="{'show': jaime === false, 'hidden': jaime === true}">
+       j'aime pas
+    </button>
+    <p>Nombre de like: {{TotalLike}} </p>
+    <a routerLink="/details/ {{ idArticle }} ">voir détails</a>
+
+    <input type="text" placeholder="comment..." [(ngModel)]="comment" >
+    <p>Commentaire: {{comment}} </p>
+  </div>
+</div>

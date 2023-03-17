@@ -1,0 +1,17 @@
+.arti_infos
+{
+  width: 18rem;
+}
+
+.nolike{
+  background-color: #1e1ee3;
+  color: white;
+}
+
+.show{
+  display: inline-block;
+}
+
+.hidden{
+  display: none;
+}

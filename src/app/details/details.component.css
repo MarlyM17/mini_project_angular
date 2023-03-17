@@ -1,0 +1,13 @@
+#infoDetail{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5%;
+}
+
+.container
+{
+  width: 1.8rem;
+}
